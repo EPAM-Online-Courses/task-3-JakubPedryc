@@ -1,3 +1,5 @@
+package efs.task.oop;
+
 public class ExtraordinaryVillager extends Villager {
 
     private Skill skill;
@@ -9,7 +11,7 @@ public class ExtraordinaryVillager extends Villager {
 
     public enum Skill{
         IDENTIFY("I will identify items for you at no charge."),
-        SHELTER("I can offer you poor shelter.");
+        SHELTER("I can offer you poor shelter");
 
         private final String description;
         Skill(String description) {
@@ -19,11 +21,13 @@ public class ExtraordinaryVillager extends Villager {
 
     @Override
     public void sayHello() {
-        System.out.println("Greetings traveler... I'm " + name + "and I'm " + age + " years old " + skill.description);
+        System.out.println("Greetings traveler... I'm " + name + " and I'm " + age + " years old. " + skill.description);
     }
 
     @Override
-    public void attack(Fighter victim) { }
+    public void attack(Fighter victim) {
+        victim.takeHit(0);
+    }
 
     @Override
     public void takeHit(int damage) {
