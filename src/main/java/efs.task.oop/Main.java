@@ -8,8 +8,8 @@ public class Main {
         List<Villager> villagersList = new ArrayList<>();
         villagersList.add(new Villager("Kashya", 30));
         villagersList.add(new Villager("Gheed", 50));
-        villagersList.add(new Villager("Warriv ", 35));
-        villagersList.add(new Villager("Flawia ", 25));
+        villagersList.add(new Villager("Warriv", 35));
+        villagersList.add(new Villager("Flawia", 25));
         villagersList.add(new ExtraordinaryVillager("Akara", 40, ExtraordinaryVillager.Skill.SHELTER));
         villagersList.add(new ExtraordinaryVillager("Deckard Cain", 85, ExtraordinaryVillager.Skill.IDENTIFY ));
 
@@ -40,7 +40,7 @@ public class Main {
         villagersList.set(5, (ExtraordinaryVillager) objectDeckardCain);
         villagersList.set(4, (ExtraordinaryVillager) objectAkara);
 
-        System.out.println("\nObozowisko Ocalone!");
+        System.out.println("\nObozowisko ocalone!");
     }
     static void performAnAction(Villager villager, Monster monster){
 
