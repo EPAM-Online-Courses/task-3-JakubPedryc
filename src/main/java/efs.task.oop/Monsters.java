@@ -1,3 +1,5 @@
+package efs.task.oop;
+
 public abstract class Monsters {
 
     public static final Monster andariel = new Monster(10, 70) {
