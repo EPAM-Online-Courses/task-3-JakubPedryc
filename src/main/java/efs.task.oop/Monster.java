@@ -1,3 +1,5 @@
+package efs.task.oop;
+
 abstract class Monster implements Fighter {
     protected int health;
     protected int damage;
